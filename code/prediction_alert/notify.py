@@ -1,8 +1,3 @@
-
-from copyreg import constructor
-from numpy import true_divide
-
-
 def notify_hot_match(match):
     return match.is_hot_match()
 
