@@ -5,7 +5,7 @@ dólares y Scotiabank en soles.
 Cuando el recibe algún pago en efectivo, lo deposita en su cuenta en soles. Sabiendo que
 todos los pagos lo realizan en efectivo.
 
-REQUERIMIENTOS:
+REQUISITOS:
 Los depósitos al banco Scotiabank sólo lo realiza con billetes de 100 y 50 soles. 
 Los depósitos al banco Interbank sólo lo realiza en miles de dólares. 
 Cuando acumula en su cuenta en soles una cantidad que supera el equivalente a 1000 dólares realiza depósitos en su cuenta en dólares. 
@@ -16,10 +16,11 @@ Al final del día se debe mostrar un reporte de estado de cuenta, mostrando tamb
   Si el monto de la cuenta en scotiabank es nulo debe devolver false
   Si el monto es de  tipo string a un numero devolver false
   Si el monto es de  tipo undefined a un numero devolver false
+  Si el monto en la cuenta de scotiabank es de 4100 soles y el tipo de cambio PEN/USD es 4, deberia dar false 
  2. los depositos a scotiabank deben de ser multiplos de 50
 #       (167, false)
 #       (150, true)
-# 3. Los depósitos al banco Interbank deben de ser multiplos de 1000
+# 3. Los depósitos al banco Interbank deben de ser multiplos de 1000 (Dolares)
 #       (1200, false)
 #       (3000, true)
 # 4. Dia sin operaciones
